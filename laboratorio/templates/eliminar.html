@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>Eliminar un Laboratorio</title>
+    </head>
+    <body>
+        <form action="" method="post">
+            {% csrf_token %}
+            <br>
+            <br>
+            <div class="alert alert-danger" role="alert" align="center">¿Estás seguro/a que deseas eliminar al "{{ laboratorio.nombre }}"?</div>
+            <p align="center">
+                <a href="{% url 'mostrar-lab' %}">Retornar</a>
+            </p>
+            <p align="center">
+                <input class="btn btn-danger" type="submit" value="Confirm">
+            </p>
+        </form>
+    </body>
+</html>

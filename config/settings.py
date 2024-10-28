@@ -51,15 +51,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_bootstrap5',    #revisar si es realmente necesario
-    'crispy_forms', #revisar si es realmente necesario
-    'crispy_bootstrap5',    #revisar si es realmente necesario
     'laboratorio.apps.LaboratorioConfig',
 ]
-
-CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'    #revisar si es realmente necesario
-
-CRISPY_TEMPLATE_PACK = 'bootstrap5' #revisar si es realmente necesario
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
