@@ -13,6 +13,7 @@ class DirectorGeneralAdmin(admin.ModelAdmin):
 
 class ProductoAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'laboratorio', 'f_fabricacion', 'p_costo', 'p_venta')
+    list_filter = ('nombre', 'laboratorio')
 
 admin.site.register(Laboratorio, LaboratorioAdmin)
 admin.site.register(DirectorGeneral, DirectorGeneralAdmin)
